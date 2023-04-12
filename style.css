@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tinos', serif;
+    /* background-image: url('codoid 2.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    
+    overflow-x: hidden;
+
+}
+
+nav{
+    /* background-color: red; */
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   /* color: black; */
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    /* color: black; */
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo img{
+    width: 300px;
+}
+
+nav a:hover{
+    color: #333;
+}
+
+.container img{
+    width: 100%;
+    margin-left: 20px;
+    /* height: 120vh; */
+    object-fit: cover;
+}
+
+.menu-line{
+height: 3px;
+width: 20px;
+background-color: darkslateblue;
+margin-bottom: 3px;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+@media all and (max-width:788px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .showmenu{
+        display: block;
+    }
+}
